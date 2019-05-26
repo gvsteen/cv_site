@@ -1,0 +1,324 @@
+# Page settings
+
+baseurl = "http://compassionate-lumiere-47ef53.netlify.com/"
+relativeURLs = true
+uglyURLs = true
+languageCode = "en-us"
+title = "Guido van Steen Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Guido van Steen"
+        tagline = "Data Scientist/Engineer"
+        avatar = "static/Guido_van_Steen.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: guido.vansteen@gmail.com"
+        title = "guido.vansteen@gmail.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+31651402291"
+        title = "+31651402291"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//beethovenconsult.com"
+        title = "beethovenconsult.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/gvsteen/"
+        title = "linkedin.com/in/gvsteen"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/gvsteen"
+        title = "github.com/gvsteen"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "MSc in Economics"
+        college = "Wageningen University"
+        dates = "1991 - 1996"
+
+        [[params.education.list]]
+        degree = "MSc in Information Science"
+        college = "Tilburg University"
+        dates = "1984 - 1990"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Near native"
+
+        [[params.language.list]]
+        language = "French"
+        level = "Proficient"
+
+        [[params.language.list]]
+        language = "German"
+        level = "Proficient"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Computers"
+
+        [[params.interests.list]]
+        interest = "Travel"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**who am I?** I am a solution-oriented data scientist/engineer with strong analytical and numerical skills. I have a broad knowledge of IT and big data frameworks, and a solid background in machine learning and statistics. I have much experience handling and analyzing large data sets. Furthermore, I am a networker capable of working independently. Critical and innovative. I have an eye for detail, but I keep focused on the larger picture. My reports are clear and comprehensive. Results focused. I take responsibility and I keep the interests of all stakeholders in mind."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experience"
+
+        [[params.jobs.list]]
+        position = "Data Scientist/Engineer"
+        dates = "November 2018 – April 2019"
+        company = "FD Mediagroep, Company.info, Amsterdam"
+        details = "I extracted and normalized source data from a MySQL database. Using these data I created Machine-Learning models to generate both predictions and (bootstrap) prediction intervals. I made use of Pandas, Scikit-learn, SQLAlchemy. I further used Connexion, Zalando’s RESTFul API framework, to make the results available on AWS."
+
+        [[params.jobs.list]]
+        position = "Data Engineer"
+        dates = "September 2017 – October 2018"
+        company = "VITO Flemish Institute for Technological Research, Mol, Belgium"
+        details = "I led the development of an automated workflow system for image processing. Liaising between two development teams, I designed and implemented solutions using Spark, Yarn, Puppet/Hiera, Docker, Linux, Airflow, Elasticsearch, PostgreSQL, Kafka, Nifi, Python, and Pandas. I used Confluence, Sphinx and ReadtheDocs to create the documentation."
+
+        [[params.jobs.list]]
+        position = "Data Scientist"
+        dates = "January 2017 – July 2017"
+        company = "Liberty Global, Parent Company of Ziggo.nl, Capacity Management, Amsterdam"
+        details = "I extracted various data sources to model the demand for Liberty Global’s European cable network. I applied Time-series analysis and Neural networks, making intensive use of Python libraries such as Pandas, NumPy, Scikit-learn, Keras/TensorFlow and Rpy2. I also used Elasticsearch, Git and Jira."
+
+        [[params.jobs.list]]
+        position = "Data Scientist/Engineer"
+        dates = "May 2016 - December 2016"
+        company = "Postbank AG, CRM Department, Bonn, Germany"
+        details = "I contributed to several key projects of the Smart Banking Program. I opened up and analyzed large data sets consisting of financial transactions, using Oracle, Hadoop, Python, Jupyter Notebook, Kafka, Hive, Sqoop and SAS."
+
+        [[params.jobs.list]]
+        position = "Data Scientist Fraud Detection"
+        dates = "November 2015 – April 2016"
+        company = "Belgium Ministry of Finance, Customs Department, Brussels"
+        details = "Designing a common data warehouse, I integrated the data cleaning efforts of the team’s individual members. I increased the team’s effectiveness, by guiding them with advanced methods, such as Random Forests, experimental design and calibration."
+
+        [[params.jobs.list]]
+        position = "Data Scientist"
+        dates = "March 2015 – now"
+        company = "Several smaller projects"
+        details = """2017: Created test questions for Econolytics.com, in order to score the knowledge of data scientists. <br> 
+        2017: Coached junior data scientists at Young-Mavericks.com with challenging problems. <br>
+        2016: Analyzed a survey for the Dutch Organization of Private Equity and Venture Capital Firms."""
+
+        [[params.jobs.list]]
+        position = "Acquisition of new skills"
+        dates = "March 2015 – now"
+        company = "Beethoven Consult"
+        details = "AWS, Terraform, Ansible, Docker, Kubernetes, Yarn, Python (Pandas, Numpy, Scikit-learn, Scikit-surprise, Flask-RESTPlus, Dask, PySpark, Plotly, Seaborn), Kafka, Java, Scala, R (dplyr, ggplot2), decision trees, Random Forests, boosting algorithms (e.g. XGBoost), SVM, Recommender Systems, etc."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+
+        [[params.projects.list]]
+        title = "Central Fund for Social Housing"
+        url = "http://cfv.nl"
+        tagline = "**Senior Model Developer**, Analyzed the impact of major policy changes on the financial prospects of Dutch social landlords (2010–2015)."
+
+        [[params.projects.list]]
+        title = "University of York"
+        url = "https://www.york.ac.uk/chp"
+        tagline = "**Senior Advisor**, Coordinated statistical and economic aspects of an international EU project (2009–2010)."
+
+        [[params.projects.list]]
+        title = "Netherlands Ministry of Housing"
+        url = "https://www.government.nl/topics/housing"
+        tagline = "**Senior Model Developer**, Led the development of economic models, in order to support Dutch housing policy (2006-2010)"
+
+        [[params.projects.list]]
+        title = "Delft University of Technology"
+        url = "https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/otb-research-for-the-built-environment"
+        tagline = "**Senior Scientific Researcher**, Researched the economic effects of housing policy in various countries (2003-2008)."
+
+        [[params.projects.list]]
+        title = "CPB Netherlands Bureau of Economic Policy Analysis"
+        url = "https://www.cpb.nl/en"
+        tagline = "**Senior Scientific Researcher**, Constructed and analyzed various policy models of the Dutch and the international economy (1995-2006)"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Pandas"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Numpy"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Scikit-learn"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Random Forests"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Xgboost"
+        level = "97%"
+                
+        [[params.skills.list]]
+        skill = "Docker"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "PySpark"
+        level = "94%"
+
+        [[params.skills.list]]
+        skill = "Shell Scripting"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Keras/TensorFlow"
+        level = "87%"
+
+        [[params.skills.list]]
+        skill = "Flask-RESTPlus"
+        level = "86%"
+
+        [[params.skills.list]]
+        skill = "Dask"
+        level = "85%"
+
+        [[params.skills.list]]
+        skill = "Scikit-surprise"
+        level = "84%"
+
+        [[params.skills.list]]
+        skill = "Plotly"
+        level = "83%"
+
+        [[params.skills.list]]
+        skill = "R"
+        level = "82%"
+
+        [[params.skills.list]]
+        skill = "SQL"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Kafka"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Ansible"
+        level = "73%"
+
+        [[params.skills.list]]
+        skill = "Terraform"
+        level = "72%"
+
+        [[params.skills.list]]
+        skill = "AWS"
+        level = "71%"
+
+        [[params.skills.list]]
+        skill = "SAS"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Hadoop"
+        level = "65%"
+
+        [[params.skills.list]]
+        skill = "Java"
+        level = "50%"
+
+        [[params.skills.list]]
+        skill = "Go"
+        level = "40%"
+
+        [[params.skills.list]]
+        skill = "Scala"
+        level = "30%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Guido van Steen"
