@@ -91,6 +91,10 @@ disable404 = true
         title = "Languages"
 
         [[params.language.list]]
+        language = "Dutch"
+        level = "Native"
+
+        [[params.language.list]]
         language = "English"
         level = "Near native"
 
