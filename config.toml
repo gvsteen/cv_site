@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "http://beethovenconsult.com/"
+baseurl = "https://beethovenconsult.com/"
 relativeURLs = true
 uglyURLs = true
 languageCode = "en-us"
